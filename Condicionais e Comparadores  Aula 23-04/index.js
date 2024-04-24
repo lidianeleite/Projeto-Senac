@@ -64,16 +64,27 @@ if ((cond1 == "sim") && (cond2 == "sim") && (cond3 == "não")){
 
 //Exercicio 1 - Interpretação de código
 
-const respostaDoUsuario = prompt("Digite o número que você quer testar")
+/*const respostaDoUsuario = prompt("Digite o número que você quer testar")
 const numero = Number(respostaDoUsuario)
 
 if (numero % 2 === 0) {
   console.log("Passou no teste.")
 } else {
   console.log("Não passou no teste.")
+}*/
+
+// Exercio 4 - Interpretação de código 
+
+let generoFilme
+let precoFilme
+
+generoFilme = prompt("Digite o genero do Filme")
+precoFilme = Number(prompt("Digite o preço do filme"))
+generoFilme = generoFilme.toUpperCase()
+if ((generoFilme == "FANTASIA") && (precoFilme < 15)){
+    alert(`Bom filme`)
+} else {
+    alert(`Escolha outro filme`)
 }
-
-
-
    
 
