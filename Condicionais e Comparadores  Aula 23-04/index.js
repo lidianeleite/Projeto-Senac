@@ -165,4 +165,58 @@ while(quantidadeAtual < quantidadeTotal){
   quantidadeAtual++
 }*/
 
+//Funções aula 29/04 
+//Exerciocio 1
+
+/*function imprimirOlaMundo() {
+    console.log("Ola Mundo!")
+}
+imprimirOlaMundo()*/
+
+//Exercicio 2
+
+/*function imprimeNome(Nome) {
+    alert(`Ola ${Nome}`)
+}
+let NomeUser = ""
+NomeUser = prompt("Aceite seu nome:")
+imprimeNome(NomeUser)*/
+
+//Exercicio 3
+
+/*function somaNum(num1,num2){
+    let soma = num1 + num2
+    return Soma
+}
+let numero1 = 3
+let numero = 12
+let resultado = 0
+resultado = somaNum(numero1,numero2)
+alert(resultadoesultado)*/
+
+//Funções Aula 30/04
+
+//Exercicio 4
+
+/*function trataArray(input){
+    let array = []
+    array.push((input[0]/2))
+    array.push((input[(input.length-1)]/2))
+return array
+}
+let array = [2,3,4,5,6,7,8]
+let novaArray = []
+novaArray = trataArray(array)
+alert(novaArray)*/
+
+//Interpretação de codigo
+//Exercicio 1
+function minhaFuncao(variavel) {
+	return variavel * 5
+}
+
+console.log(minhaFuncao(2))
+console.log(minhaFuncao(10))
+
+
 
