@@ -42,7 +42,7 @@ trocaParametros()*/
 
 // 1 (B)
 
-function parametros(nome,idade,cidade,profissão){
+/*function parametros(nome,idade,cidade,profissão){
 
     console.log (`Sou ${nome} tenho ${idade} anos, moro em ${cidade} e sou ${profissão}`)
 }
@@ -50,4 +50,6 @@ let nome = prompt("Digite seu nome")
 let idade = prompt("Digite sua idade") 
 let cidade = prompt("Digite sua cidade")
 let profissão = prompt("Digite sua profissão")
-parametros(nome,idade,cidade,profissão)
+parametros(nome,idade,cidade,profissão)*/
+
+
