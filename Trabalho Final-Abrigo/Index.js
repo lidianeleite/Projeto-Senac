@@ -1,0 +1,96 @@
+// Banco de dados dos abrigos disponíveis no estado
+//O nome do "bando de dados" era abrigos, e não abrigosCadastrados
+let abrigos = []
+
+// Variáveis
+let menu
+const listarAbrigos = []
+while (menu !== 5) {
+    menu = Number(
+    prompt(`===== ABRIGOS TEMPORÁRIOS =====
+
+    1. Cadastrar abrigo
+
+    2. Listar abrigos
+
+    3. Procurar abrigo
+
+    4. Sair
+
+    Escolha uma opção:`)
+  )
+
+  switch (menu) {
+    case 1:
+        cadastrar()
+        break;
+    case 2:
+        listar()
+        break;
+    case 3:
+        buscarAbrigo()
+        break;
+    case 4:
+        alert("Obrigado por acessar este sistema")
+        break;
+    default:
+        alert("Não existe essa opção no menu!")
+        break;
+  }
+
+function cadastrar() {
+    const nomeAbrigo = prompt("Digite o nome do abrigo")
+    const enderecoAbrigo = prompt("Digite a rua, número e bairro do abrigo")
+    const cidadeAbrigo = prompt("Digite a cidade do seu abrigo:").toLowerCase()
+    const telefoneAbrigo = Number(prompt("Digite  o telefone do abrigo:"))
+    const capacidadeAbrigo = Number(prompt("Digite a capacidade do abrigo"))
+    abrigos.push({nome: nomeAbrigo,endereco: enderecoAbrigo, cidade: cidadeAbrigo, telefone: telefoneAbrigo, capacidade: capacidadeAbrigo});
+    //Registra no objeto
+    //abrigosCadastrados.push(abrigo);
+    //alert("Abrigo cadastrado com sucesso!");
+  }
+
+function listar() {
+    if (abrigos.length === 0) {
+        alert("Ainda não existem abrigos cadastrados");
+    } else {
+        let mensagem =
+`
+      LISTAGEM DE ABRIGOS:
+
+      ----------------------------------
+
+      NOME      |    ENDEREÇO       |   TELEFONE  |   CAPACIDADE
+
+     --------------------------------------------------------------------`;
+    for (let abrigo of abrigos) {
+        mensagem += `\n   ${abrigo.nome}  ${abrigo.endereco}  ${abrigo.cidade}  ${abrigo.telefone}  ${abrigo.capacidade}`
+    }
+    alert(mensagem);
+    }
+}
+    
+function buscarAbrigo() {
+if (abrigos.length === 0) {
+    alert("Ainda não existem abrigos cadastrados na sua cidade.");
+} else {
+    const localizarAbrigo = prompt("Digite sua cidade").toLowerCase();
+    let mensagem = 
+    
+    `LISTAGEM DE ABRIGOS:
+
+      ----------------------------------
+
+      NOME      |    ENDEREÇO          |   TELEFONE  | CAPACIDADE
+
+     --------------------------------------------------------------------`;
+    for (let abrigo of abrigos) {
+        if (abrigo.cidade.includes(localizarAbrigo))
+        {
+            mensagem += "\n" + abrigo.nome + " " +  abrigo.endereco + " " + abrigo.cidade + " " + abrigo.telefone + " " + abrigo.capacidade
+        }
+    }
+    alert(mensagem);
+    }
+}
+}

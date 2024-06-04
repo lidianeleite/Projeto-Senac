@@ -53,3 +53,55 @@ let profissão = prompt("Digite sua profissão")
 parametros(nome,idade,cidade,profissão)*/
 
 
+// Aula 03/06/24 Objetos
+//Notação de ponto
+/*const professor = {
+	nome: "Vitor",
+		idade: 27,
+		email: 'vitor@gmail.com'/*
+}
+//Mostra valores antigos
+/*console.log(professor.nome)
+console.log(professor["email"])
+//Altera valores
+professor.nome = 'Mika'
+professor['email'] = 'profmika@gmail.com'
+//Mostra valores alterados
+console.log(professor.nome)
+console.log(professor["email"])/*
+
+//Exercio 1
+/*const filme = {
+	nome: "Trololo",
+	direcao: "stivi spilbi",
+	anoLancamento: "1978"
+	elenco:['Nivelino', 'Jucelino', 'Grande Otelo'],
+	jaVi: "SIM",
+
+}
+console.log(filme.nome)
+console.log(filme.direccao)
+console.log(filme["anoLancamento"])
+console.log(filme["elenco"])
+console.log(filme.jaVi)*/
+
+//Exercio 2
+/*const pessoa = {
+	nome: "Maria",
+	idade: "45",
+	musicaPreferida: "Samba",
+}
+console.log("O nome da pessoa é " + pessoa.nome + ", ela tem" + pessoa.idade + " anos e gosta muito de " + pessoa.musicaPrefewrida + ".")*/
+
+//Exercio 3
+
+/*ilme.elenco[0] = "As Lindas"
+
+let mensagem = ""
+for (let i = 0; i<=2; i++) {
+	mensagem = mensagem + Filme.elenco[i] + " ," + Filme.personagem[i] + "\n"
+}
+console.log(mensagem)*/
+
+
+
