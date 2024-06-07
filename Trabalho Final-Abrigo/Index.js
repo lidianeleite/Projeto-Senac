@@ -242,6 +242,7 @@ function cadastrar() {
   const peso = Number(prompt("Digite seu peso"));
   const tipoSangue = prompt("Digite seu tipo sanguineo").toLowerCase();
   const ultimaData = prompt("Digite a ultima data de doação? DD/MM/AAAA");
+  let varTeste = 0
 
   const doador = {
     nome,
